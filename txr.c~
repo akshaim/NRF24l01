@@ -14,4 +14,7 @@ void setup(void){
 void loop(void){
  if (digitalRead(SW1) == HIGH){
  msg[0] = 111;
+ radio.write(msg, 1);}
+ else
+ {msg[0] = 000;
  radio.write(msg, 1);}}

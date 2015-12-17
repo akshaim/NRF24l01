@@ -21,6 +21,5 @@ void loop(void){
      Serial.println(msg[0]);
      if (msg[0] == 111){delay(10);digitalWrite(LED1, HIGH);}
      else {digitalWrite(LED1, LOW);}
-     delay(1000);}}
- else{Serial.println("000");
- delay(1000);}}
+     delay(10);}}
+ else{Serial.println("No radio available");}}
